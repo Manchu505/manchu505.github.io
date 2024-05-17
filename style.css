@@ -1,0 +1,64 @@
+/* Set the default font for all elements in the body to Arial, a commonly used sans-serif font. */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style rules for the <header> element. */
+header {
+    /* Set a background image with the path 'header-background.png'. The image won't repeat and will cover the entire header area, centered in both dimensions. */
+    background: url('header-background.png') no-repeat center center/cover;
+    /* Set the text color to white (rgb(255, 255, 255) is the RGB code for white). */
+    color: rgb(255, 255, 255);
+    /* Align text to the left within the header. */
+    text-align: left;
+    /* Add padding on the top and bottom of the header to increase space around the content inside. */
+    padding: 20px 0;
+}
+
+/* Style rules for all <section> elements. */
+section {
+    /* Add a margin around sections to ensure they don't touch other elements or the edge of the viewport. */
+    margin: 20px;
+    /* Add padding inside each section to create space between the content and the section borders. */
+    padding: 20px;
+    /* Rounded corners for the sections, the radius of the curve is 8px. */
+    border-radius: 8px;
+    /* Set the background color of sections to a light grey (#f9f9f9), which makes the text more readable against a light background. */
+    background-color: #f9f9f9;
+}
+
+/* Style rules for the <footer> element. */
+footer {
+    /* Center-align text within the footer for a neater appearance. */
+    text-align: center;
+    /* Add padding inside the footer to create space around its content. */
+    padding: 10px;
+    /* Set the background color of the footer to a dark grey (#222), providing good contrast with the white text color. */
+    background-color: #222;
+    /* Set the text color in the footer to white for readability against the dark background. */
+    color: white;
+}
+
+/* Style rules for all <button> elements. */
+button {
+    /* Set the background color of buttons to a shade of green (#4CAF50), which is visually appealing and commonly used for 'action' buttons. */
+    background-color: #4CAF50; /* Green */
+    /* Set the text color inside buttons to white, ensuring high contrast for readability. */
+    color: white;
+    /* Add padding around the text inside buttons to make them more clickable and visually appealing. */
+    padding: 10px 15px;
+    /* Add a margin around buttons to ensure they don't touch other elements. */
+    margin: 5px;
+    /* Remove the default border of buttons for a cleaner look. */
+    border: none;
+    /* Rounded corners for buttons, the radius of the curve is 4px. */
+    border-radius: 4px;
+    /* Change the cursor to a pointer when hovering over buttons to indicate they are clickable. */
+    cursor: pointer;
+}
+
+/* Add a hover effect to buttons to enhance user interaction feedback. */
+button:hover {
+    /* Change the background color to a slightly darker green (#45a049) when the mouse hovers over a button. */
+    background-color: #45a049;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- The line above tells the browser that this document is an HTML5 document. -->
+
+<html lang="en">
+<!-- This <html> tag starts the HTML document. The 'lang="en"' attribute specifies that the primary language of this document is English. -->
+
+<head>
+    <!-- The <head> section of the HTML document is where we place meta information about the document, link CSS files, and include titles. It doesn't display content directly. -->
+    
+    <meta charset="UTF-8">
+    <!-- This <meta> tag sets the character encoding of the website to UTF-8, which includes most characters from the majority of written languages. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This viewport tag ensures the site is scaled correctly on different devices, setting the width of the viewport to match the screen's width and the initial zoom level to 1. -->
+
+    <title>Web Applications and Databases</title>
+    <!-- The <title> tag sets the browser title and is displayed in the browser's title bar or tab. -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- This <link> tag links an external CSS file called 'style.css' which contains the styles for the page. The 'rel' attribute describes the relationship between the linked resource and the current document. -->
+</head>
+
+<body>
+    <!-- The <body> tag encloses all the content of an HTML document that is visible on the page. -->
+
+    <header>
+        <!-- The <header> tag is used to define the introductory content or navigational links. It typically contains heading elements. -->
+        <h1>Understanding Web Applications</h1>
+        <!-- The <h1> tag is used for the main heading of the page. It is important for SEO and accessibility. -->
+    </header>
+
+    <section id="introduction">
+        <!-- The <section> tag is used to define sections in a document, with each section containing related content. The 'id' attribute gives a unique identifier to this section called 'introduction'. -->
+        <h2>What are Web Applications?</h2>
+        <!-- <h2> tag defines a secondary heading. -->
+
+        <p>Web applications, often referred to as web apps, are interactive programs that run on a web server and are accessed through a web browser over the internet. Unlike traditional desktop applications that are launched by your operating system, web apps must be accessed through a web interface. They provide functionality such as interacting with users, connecting to back-end databases, and generating results to browsers. This makes web applications highly accessible across various devices and operating systems, which contributes to their popularity.</p>
+        <!-- <p> tags define paragraphs. This paragraph describes what web applications are. -->
+
+        <p>Web apps range from simple applications like message boards or guest sign-in pages to complex software applications like project management tools or interactive gaming platforms. They are built using a combination of server-side scripts (like PHP and ASP) to handle the storage and retrieval of information, and client-side scripts (like HTML, JavaScript, and CSS) to present information to users. This dual-script approach allows web applications to be both dynamic and interactive, making them an essential part of modern web technology.</p>
+        <!-- Another paragraph that describes different types of web applications and how they are built. -->
+    </section>
+
+    <!-- Additional sections can be similarly commented, explaining what each part does and how it relates to the overall function of the web application. -->
+    <section id="database-interaction">
+        <h2>Interaction with Back-End Databases</h2>
+        <p>Web applications interact with back-end databases primarily to store, retrieve, update, and delete data dynamically. This interaction is facilitated by a server-side script written in languages such as PHP, Python, Ruby, or Java. These scripts execute database queries and operations based on user requests and actions performed on the web interface.</p>
+
+        <p>When a user interacts with a web application (for example, by submitting a form), the client-side portion of the application (running in the user's browser) sends a request to the server. The server-side script processes this request, formulating a SQL query or a command that is sent to the database. The database processes this query and returns the results back to the server script. Then, the server-side script processes these results and sends the appropriate data back to the client, often in the form of HTML or JSON, which updates the user interface accordingly.</p>
+
+        <p>This continuous cycle of requests and updates is what allows web applications to offer dynamic content that changes based on user interaction, making them highly interactive and responsive to user needs. The database is the central repository for the application’s data, making its design and management crucial for the performance and reliability of the application.</p>
+
+    </section>
+        <section id="use-cases">
+        <!-- The <section> tag here defines a new section in the document with an ID of "use-cases", which helps in organizing content and can be targeted with CSS or JavaScript. -->
+        
+        <h2>Business Use Cases</h2>
+        <!-- The <h2> tag provides a heading for this section, indicating that it will discuss business use cases of web applications. -->
+        
+        <h3>Intranet Use Cases:</h3>
+        <!-- The <h3> tag provides a sub-heading under the Business Use Cases, focusing on intranet applications. -->
+
+        <ul>
+            <!-- The <ul> tag creates an unordered list, which is used here to list different use cases for intranets within a business context. -->
+            <li><strong>Internal Communications:</strong> Serves as a central hub for company communications, announcements, and updates.</li>
+            <li><strong>Document Management:</strong> Stores and shares documents, policies, and procedures for easy access and collaboration.</li>
+            <li><strong>HR Management:</strong> Manages HR tasks like time off requests, benefits information, and training programs.</li>
+            <li><strong>Project Management:</strong> Enables collaboration on projects with shared timelines, resources, and updates.</li>
+        </ul>
+        
+        <button id="showImage1">Show Image 1</button>
+        <!-- The <button> tag defines a clickable button, which the user can interact with. The 'id' attribute assigns a unique identifier ("showImage1") to this button, which can be used in JavaScript to add functionality, such as showing an image when clicked. -->
+
+        <h3>Internet Use Cases:</h3>
+        <!-- Another <h3> sub-heading, this time focusing on internet applications. -->
+
+        <ul>
+            <!-- Another unordered list (<ul>), listing use cases for internet applications. -->
+            <li><strong>E-commerce:</strong> Sells products and services online, reaching a global audience with integrated shopping and payment systems.</li>
+            <li><strong>Customer Support:</strong> Offers customer support through live chat, forums, or ticketing systems for efficient service.</li>
+            <li><strong>Marketing and Outreach:</strong> Utilizes digital marketing strategies like SEO, social media, email marketing, and online advertising.</li>
+            <li><strong>Remote Work and Collaboration:</strong> Facilitates remote work via cloud services and collaboration tools, allowing real-time team interaction.</li>
+        </ul>
+
+        <button id="showImage2">Show Image 2</button>
+        <!-- Similar to the first button, this <button> tag creates another clickable button with a unique ID ("showImage2"). This can be linked with JavaScript to show a second image when the button is clicked. -->
+
+        <div>
+            <!-- The <div> tag defines a division or a section in an HTML document. It is used here to group two images together, which makes it easier to manage their display properties as a unit using CSS or JavaScript. -->
+            <img id="bodyImage1" src="bodyimage1.png" style="display:none;">
+            <!-- The <img> tag within the <div> is used to embed an image ("bodyimage1.png") in the document. The 'style' attribute is set to 'display:none;' which means this image is not visible by default. -->
+            
+            <img id="bodyImage2" src="bodyimage2.png" style="display:none;">
+            <!-- A second <img> tag for another image ("bodyimage2.png"), also hidden by default. This allows JavaScript to control the visibility of these images dynamically in response to button clicks. -->
+        </div>
+
+        <button id="closeImages">Close Images</button>
+        <!-- Another <button> with an ID of "closeImages". This button is intended to be used with JavaScript to hide the images when clicked, interacting with the <div> above to change the display properties of the images. -->
+    </section>
+
+    <footer>
+        <!-- The <footer> tag defines the footer for the document or a section and typically contains information such as copyright notices, or related links. -->
+        <p>Grant Stoebner - MS587 Assignment #1</p>
+        <!-- This paragraph in the footer provides the my name and the assignment information. -->
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- The <script> tag is used to link JavaScript files, which add interactivity to the web pages. The 'src' attribute specifies the path to the JavaScript file. -->
+
+</body>
+</html>
